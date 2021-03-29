@@ -1,11 +1,21 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from "vue-router";
-import Home from "../views/Home.vue";
+import Home from "../layout/Home.vue";
 
 const routes: Array<RouteRecordRaw> = [
   {
     path: "/",
-    name: "Home",
+    name: "home",
     component: Home,
+    children: [
+      {
+        path: "",
+        name: "name",
+        component: () => import("../views/home/Index.vue"),
+        meta: {
+          title: "Home",
+        },
+      },
+    ],
   },
   {
     path: "/about",
@@ -21,6 +31,12 @@ const routes: Array<RouteRecordRaw> = [
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
   routes,
+});
+
+router.afterEach((to, from) => {
+  if (to.meta && to.meta.title) {
+    document.title = `${to.meta.title} | Leno`;
+  }
 });
 
 export default router;

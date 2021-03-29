@@ -13,9 +13,14 @@ module.exports = {
       "2xl": "1536px",
     },
     colors: {
+      leno: {
+        white: "#FCFCFC",
+        green: "#00DF9A",
+        darker: "#050505",
+        dark: "#0F0F0F",
+      },
       transparent: "transparent",
       current: "currentColor",
-
       black: colors.black,
       white: colors.white,
       gray: colors.coolGray,
