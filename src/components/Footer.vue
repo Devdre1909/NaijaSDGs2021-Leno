@@ -15,7 +15,7 @@
         </div>
       </div>
       <div class="w-5/12">
-        <div class="circle bg-leno-white"></div>
+        <div class="mx-auto circle bg-leno-white"></div>
       </div>
     </div>
     <div class="text-leno-white footer-list">
@@ -71,8 +71,8 @@ export default defineComponent({
 <style lang="scss" scoped>
 .circle {
   border: 100%;
-  width: 350px;
-  height: 350px;
+  width: 250px;
+  height: 250px;
   @apply rounded-full;
 }
 .footer-list {
