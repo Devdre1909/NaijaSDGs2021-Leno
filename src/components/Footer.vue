@@ -43,7 +43,7 @@
           <a>Contact</a>
         </div>
       </div>
-      <div class="col-span-4">
+      <div class="md:col-span-4">
         <hr class="text-opacity-60 text-leno-white" />
       </div>
     </div>
@@ -76,7 +76,7 @@ export default defineComponent({
   @apply rounded-full;
 }
 .footer-list {
-  @apply w-10/12 mx-auto  grid grid-cols-4 gap-5 mt-20;
+  @apply w-10/12 mx-auto  grid grid-cols-1 md:grid-cols-4 gap-5 mt-20;
   & > div {
     h3 {
       @apply text-base uppercase font-bold mb-3 tracking-wide;

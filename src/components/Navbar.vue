@@ -37,7 +37,7 @@ export default defineComponent({
   @apply bg-leno-darker sticky top-0;
 }
 .menus {
-  @apply flex space-x-8;
+  @apply space-x-8 hidden md:flex;
   li {
     a {
       @apply text-base cursor-pointer;
