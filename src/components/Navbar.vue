@@ -1,5 +1,5 @@
 <template>
-  <nav class="nav text-leno-white">
+  <nav class="nav text-leno-white z-30">
     <div class="flex w-10/12 mx-auto justify-between items-center h-20">
       <h2 class="font-bold">
         <a class="text-leno-white text-3xl"> Leno </a>
