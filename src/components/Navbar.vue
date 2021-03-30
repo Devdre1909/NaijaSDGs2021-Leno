@@ -10,7 +10,7 @@
           <a>Raise Funds</a>
         </li>
         <li>
-          <a>Login</a>
+          <router-link :to="{ name: 'Auth' }">Login</router-link>
         </li>
         <li>
           <ButtonVue :show_icon="false" size="small">Get Started</ButtonVue>
