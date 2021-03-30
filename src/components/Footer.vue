@@ -7,10 +7,7 @@
             Secure your future with us
           </h3>
           <div class="mt-7">
-            <a
-              class="bg-leno-green inline-block py-4 px-8 text-leno-darker font-bold"
-              >Get Started</a
-            >
+            <button-vue>Get Started</button-vue>
           </div>
         </div>
       </div>
@@ -20,8 +17,8 @@
     </div>
     <div class="text-leno-white footer-list">
       <div>
-        <div></div>
-        <h3 class="font-bold text-xl">Secure your feature</h3>
+        <Brand small />
+        <h3 class="font-bold mt-2 text-xl">Secure your feature</h3>
       </div>
       <div>
         <h3 class="">Product</h3>
@@ -62,9 +59,15 @@
 
 <script lang="ts">
 import { defineComponent } from "vue";
+import Brand from "./utils/Brand.vue";
+import ButtonVue from "./utils/Button.vue";
 
 export default defineComponent({
   name: "Footer",
+  components: {
+    ButtonVue,
+    Brand,
+  },
 });
 </script>
 

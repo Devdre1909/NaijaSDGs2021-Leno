@@ -6,4 +6,4 @@ import "./assets/tailwind.css";
 import "./assets/css/main.scss";
 // import titleMixin from "./mixins/title";
 
-createApp(App).use(store).use(router).mount("#app");
+const app = createApp(App).use(store).use(router).mount("#app");

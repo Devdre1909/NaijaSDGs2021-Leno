@@ -1,9 +1,7 @@
 <template>
-  <nav class="nav text-leno-white z-30">
+  <nav class="nav text-leno-white z-30 border-b-2 border-leno-dark shadow-md">
     <div class="flex w-10/12 mx-auto justify-between items-center h-20">
-      <h2 class="font-bold">
-        <a class="text-leno-white text-3xl"> Leno </a>
-      </h2>
+      <brand />
       <ul class="menus">
         <li>
           <a>Explore StartUps</a>
@@ -15,9 +13,7 @@
           <a>Login</a>
         </li>
         <li>
-          <a class="bg-leno-green py-4 px-8 text-leno-darker font-bold"
-            >Get Started</a
-          >
+          <ButtonVue :show_icon="false" size="small">Get Started</ButtonVue>
         </li>
       </ul>
     </div>
@@ -26,9 +22,15 @@
 
 <script lang="ts">
 import { defineComponent } from "vue";
+import Brand from "./utils/Brand.vue";
+import ButtonVue from "./utils/Button.vue";
 
 export default defineComponent({
   name: "Navbar",
+  components: {
+    ButtonVue,
+    Brand,
+  },
 });
 </script>
 
@@ -37,7 +39,7 @@ export default defineComponent({
   @apply bg-leno-darker sticky top-0;
 }
 .menus {
-  @apply space-x-8 hidden md:flex;
+  @apply space-x-8 hidden md:flex items-center;
   li {
     a {
       @apply text-base cursor-pointer;
